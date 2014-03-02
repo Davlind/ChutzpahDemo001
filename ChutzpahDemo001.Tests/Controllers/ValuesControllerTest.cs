@@ -13,7 +13,7 @@
             // Arrange
             var controller = new LevenshteinController();
 
-            Assert.AreEqual(2, controller.Get("David", "Davvid"));
+            Assert.AreEqual(3, controller.Get("David", "Davvid"));
             Assert.AreEqual(2, controller.Get("David", "Divad"));
             Assert.AreEqual(1, controller.Get("David", "Dvid"));
             Assert.AreEqual(2, controller.Get("Katrine", "Ktrne"));
